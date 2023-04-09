@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: yellow;
+            padding: 10px;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: blue; */
+            border: 10px solid blue;
+            font-weight: bold;
+            font-size: 2rem;
+            width: 50%;
+            position: relative;
+            z-index: 1
+        }
+
+        h1:nth-of-type(2){
+            left: 30%;
+            top:-20px;
+            z-index: 0;
+        }
+
+        h1:last-of-type {
+            position: relative;
+            left: 40%;
+            top: -40px;
+            z-index: 0;
+        }
+
+        span {
+            background-color: rgba(255, 166, 0, 0.582);
+            padding: 50px;
+            border: 10px solid rgba(255, 0, 0, 0.418);
+            margin: 50px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model 1</h1>
+    <h1>Box Model 2</h1>
+    <h1>Box Model 3</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sapiente molestias, veritatis numquam quod at, enim, minima quisquam ipsum beatae ipsa porro. Soluta quasi consequuntur incidunt ea. Iste, perspiciatis magnam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sapiente molestias, veritatis numquam quod at, enim, minima quisquam ipsum beatae ipsa porro. Soluta quasi consequuntur incidunt ea. Iste, perspiciatis magnam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sapiente molestias, veritatis numquam quod at, enim, minima quisquam ipsum beatae ipsa porro. Soluta quasi consequuntur incidunt ea. Iste, perspiciatis magnam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sapiente molestias, veritatis numquam quod at, enim, minima quisquam ipsum beatae ipsa porro. Soluta quasi consequuntur incidunt ea. Iste, perspiciatis magnam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sapiente molestias, veritatis numquam quod at, enim, minima quisquam ipsum beatae ipsa porro. Soluta quasi consequuntur incidunt ea. Iste, perspiciatis magnam!
+        Lorem ipsum <span>dolor</span> sit amet, consectetur adipisicing elit. Quidem sapiente molestias, veritatis numquam quod at, enim, minima quisquam ipsum beatae ipsa porro. Soluta quasi consequuntur incidunt ea. Iste, perspiciatis magnam!
+    </p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selections Related Pseudo Classes - I</title>
+    <style>
+        /* div > :first-child {
+            background-color: yellow;
+        }
+
+        div > :nth-child(2) {
+            background-color: blue;
+            font-size: 18px;
+        }
+
+        div > :last-child {
+            background-color: green;
+        } */
+
+        /* div > :nth-child(4n){
+            background-color: yellow;
+        } */
+
+        div > :nth-last-child(6) {
+            background-color: yellow;
+        }
+
+        p > :only-child {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selections Related Pseudo Classes - 1</h1>
+    <div>
+        <p>I am a paragraph</p>
+        <button>I am a button</button>
+        <div>I am a div</div>
+        <button>I am a button too</button>
+        <p>
+            I am a paragraph 
+            <input type="text" value="I am text">
+            <!-- <button>Buton Here</button> -->
+        </p>
+        <h2>I am a heading</h2>
+    </div>
+</body>
+</html>

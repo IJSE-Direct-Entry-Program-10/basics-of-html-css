@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors Example</title>
+    <style>
+        * {
+           font-family: Ubuntu; 
+        }
+
+        p * {
+            font-size: 24px;
+        }
+
+        ul {
+            background-color: lightgreen;
+        }
+
+        #first-list {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .highlight {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 40px;
+            background-color: aqua;
+            color: blue;
+        }
+
+        .random-class {
+            text-decoration: underline;
+        }
+
+        [type="submit"] {
+            border-radius: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic <span class="highlight random-class">Selectors</span> Example</h1>
+    <p>
+        Lorem <span class="highlight">ipsum</span> dolor <b>sit</b> amet <mark>consectetur</mark> adipisicing elit. Fuga, obcaecati adipisci minus nesciunt esse reiciendis quod qui quisquam rem numquam quibusdam atque dignissimos, veritatis distinctio blanditiis eveniet magnam, reprehenderit cupiditate.
+    </p>
+    <ul id="first-list">
+        <li>First</li>
+        <li class="highlight random-class">Second</li>
+        <li>Third</li>
+    </ul>
+    <button type="submit">SAVE</button>
+    <button class="highlight" type="reset">RESET</button>
+    <button type="button">BUTTON</button>
+    <p>
+        Lorem <span>ipsum</span> dolor sit, amet consectetur adipisicing elit. Sit perferendis sunt debitis blanditiis facilis excepturi consectetur ullam at fugit quod, quis vitae voluptas iusto iste consequatur sapiente maxime sequi voluptatem?
+    </p>
+    <ul>
+        <li>Second List 1</li>
+        <li>Second List 2</li>
+        <li>Second List 3</li>
+    </ul>
+</body>
+</html>

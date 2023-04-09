@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Elements vs. Inline Elements</title>
+    <style>
+        #block {
+            background-color: yellow;
+        }
+
+        #outer-div {
+            width: 250px;
+            height: 250px;
+            background-color: green;
+        }
+
+        #inner-div {
+            background-color: red;
+        }
+
+        p, h1, ul {
+            background-color: yellow;
+        }
+
+        .inner-inline {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block Elements vs. Inline Elements</h1>
+    Lorem ipsum dolor sit amet <div id="block">Block</div>
+
+    <div id="outer-div">
+        <div id="inner-div">
+            Text <br>
+            Text <br>
+            Text
+        </div>
+        <span class="inner-inline">Something</span>
+        <span class="inner-inline">New Span</span>
+        <a href="google.lk">Something</a>
+        <b>Bold Text</b><i>Italic Text</i>
+    </div>
+    <p>
+        lorem
+    </p>
+
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+    </ul>
+</body>
+</html>

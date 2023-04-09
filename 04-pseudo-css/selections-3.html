@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selections Related Pseudo Classes - III</title>
+    <style>
+
+        :root{
+            background-color: red;
+        }
+
+        html {
+            --theme-color: blue;
+            --theme-h-font-size: 24px;
+            background-color: yellow;
+        }
+
+        div {
+            --theme-bg-color: yellow;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            border: 4px solid black;
+        }
+
+        input {
+            background-color: var(--theme-bg-color);
+        }
+
+        div > button:not(p){
+            background-color: var(--theme-color);
+        }
+
+        p {
+            border: 2px solid var(--theme-color);
+            font-size: var(--theme-h-font-size);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Selections Related Pseudo Classes - 3</h1>
+    <div>
+        <p>I am a paragraph</p>
+        <button>I am a button</button>
+        <input type="text" value="I am text field">
+        <button>Yet another button</button>
+        <p>I am the second paragraph</p>
+    </div>
+</body>
+</html>
