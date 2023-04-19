@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns via Floats</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .col {
+            width: 33.33%;
+            float: left;
+        }
+
+        .col:first-of-type {
+            float: right;
+            background-color: yellow;
+        }
+
+        .col:nth-of-type(2) {
+            float: right;
+            background-color: green;
+        }
+
+        .col:last-of-type {
+            background-color: blue;
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Columns via Floats</h1>
+    <div class="col">
+        <h3>Column-1</h3>
+        Lorem <span>ipsum</span> dolor <b>sit</b> amet <em>consectetur</em>, adipisicing elit. Est, nemo ullam
+        necessitatibus natus amet illum iure repellat cum doloremque hic perspiciatis cupiditate tempora quod dicta
+        distinctio suscipit sed esse harum!
+        Vel, modi eius porro maiores laborum quisquam accusamus ratione molestiae ipsam corporis, fugiat aspernatur
+        architecto ab aperiam sapiente odio sed voluptas, voluptatum recusandae neque. A minima tenetur maxime corporis
+        exercitationem.
+        Nihil nobis explicabo minima animi? Architecto, perspiciatis. Nesciunt debitis corporis fugit molestiae dolor
+        velit illo dolorem. Expedita corrupti earum, quaerat suscipit perferendis quisquam. Saepe ex mollitia, ut minus
+        odit placeat.
+    </div>
+    <div class="col">
+        <h3>Column-2</h3>
+        Lorem <a href="#">ipsum</a> dolor sit amet consectetur, adipisicing elit. Est, nemo ullam necessitatibus natus
+        amet illum iure repellat cum doloremque hic perspiciatis cupiditate tempora quod dicta distinctio suscipit sed
+        esse harum!
+        Vel, modi eius porro maiores laborum quisquam accusamus ratione molestiae ipsam corporis, fugiat aspernatur
+        architecto ab aperiam sapiente odio sed voluptas, voluptatum recusandae neque. A minima tenetur maxime corporis
+        exercitationem.
+        Nihil nobis explicabo minima animi? Architecto, perspiciatis. Nesciunt debitis corporis fugit molestiae dolor
+        velit illo dolorem. Expedita corrupti earum, quaerat suscipit perferendis quisquam. Saepe ex mollitia, ut minus
+        odit placeat.
+    </div>
+    <div class="col">
+        <h3>Column-3</h3>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, nemo ullam necessitatibus natus amet illum iure
+        repellat cum doloremque hic perspiciatis cupiditate tempora quod dicta distinctio suscipit sed esse harum!
+        Vel, modi eius porro maiores laborum quisquam accusamus ratione molestiae ipsam corporis, fugiat aspernatur
+        architecto ab aperiam sapiente odio sed voluptas, voluptatum recusandae neque. A minima tenetur maxime corporis
+        exercitationem.
+        Nihil nobis explicabo minima animi? Architecto, perspiciatis. Nesciunt debitis corporis fugit molestiae dolor
+        velit illo dolorem. Expedita corrupti earum, quaerat suscipit perferendis quisquam. Saepe ex mollitia, ut minus
+        odit placeat.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad id deserunt 
+    </div>
+    <p class="clearfix">
+        Clearfix is mandatory here
+    </p>
+</body>
+
+</html>
