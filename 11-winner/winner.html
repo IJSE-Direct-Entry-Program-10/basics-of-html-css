@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the Winner</title>
+    <script defer src="js/winner.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Ubuntu, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #game {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #game label {
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            display: block;
+            text-transform: capitalize;
+            margin-top: 10px;
+        }
+
+        #btn-pick {
+            font-family: Ubuntu, sans-serif;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgb(3, 194, 252);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Finding the Winner</h1>
+
+    <div id="game">
+        <button id="btn-pick">Start</button>
+        <label id="lbl-winner">Click to Start</label>
+    </div>
+</body>
+
+</html>

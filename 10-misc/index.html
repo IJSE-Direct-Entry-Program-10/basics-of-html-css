@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligning in Action</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #outer-div {
+            background-color: yellow;
+            width: 450px;
+            height: 400px;
+            position: relative;
+        }
+
+        .inner-div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #red {
+            background-color: yellow;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid red;
+            border-bottom: 50px solid transparent;
+        }
+
+        #blue {
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 50%;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="outer-div">
+        <div id="red" class="inner-div"></div>
+        <div id="blue" class="inner-div"></div>
+    </div>
+</body>
+</html>
