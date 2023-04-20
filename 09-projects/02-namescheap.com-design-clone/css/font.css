@@ -23,7 +23,16 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "gb icon";
+    src: url(../font/gb-icon-font.aff6da928e14924cf7d53b99aa68fc6e.woff2);;
+}
+
 html {
     font-family: "Museo Sans", sans-serif;
     font-weight: 300;
+}
+
+.icon {
+    font-family: "gb icon";
 }

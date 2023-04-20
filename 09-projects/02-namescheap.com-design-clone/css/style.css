@@ -25,10 +25,10 @@
 #menu-bar-right-container{
     float: right;
     height: 100%;
-    background-color: blue;
 }
 
-#menu-bar-left-container > span {
+#menu-bar-left-container > span,
+#menu-bar-right-container > span {
     padding: 0 8px;
 }
 
@@ -40,10 +40,15 @@
     border-bottom: 5px solid transparent;
     margin-left: 5px;
     display: inline-block;
-    vertical-align: middle;    
+    vertical-align: text-bottom;    
 }
 
 #menu-bar span:hover {
     color: #8cc1c1;
     cursor: pointer;
+}
+
+#menu-bar-right-container span.icon {
+    font-size: 19px;
+    font-weight: bold;
 }
