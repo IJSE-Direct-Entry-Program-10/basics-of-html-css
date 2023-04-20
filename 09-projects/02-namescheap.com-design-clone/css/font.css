@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Museo Sans";
+    src: url(../font/museo-sans-300-webfont.96dd56ebb50aa0150f6630360d8d69cf.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: url(../font/museo-sans-500-webfont.5d9883d92e2eaa724e4e6beb0ef6728a.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: url(../font/museo-sans-700-webfont.b125dc012841fa8a23b98c37499ca5e8.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Museo Sans";
+    src: url(../font/museo-sans-300-italic-webfont.1ec5d6b46fb910b7438691a06f535727.woff2);
+    font-weight: 300;
+    font-style: italic;
+}
+
+html {
+    font-family: "Museo Sans", sans-serif;
+    font-weight: 300;
+}

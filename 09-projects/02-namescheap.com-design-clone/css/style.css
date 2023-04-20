@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+#menu-bar {
+    background-color: #2E3133;
+    height: 34px;
+    color: white;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 16px;
+}
+
+#menu-bar-left-container{
+    float: left;
+    height: 100%;
+}
+
+#menu-bar-right-container{
+    float: right;
+    height: 100%;
+    background-color: blue;
+}
+
+#menu-bar-left-container > span {
+    padding: 0 8px;
+}
+
+.drop-down::after {
+    content: "";
+    border-top: 5px solid white;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+#menu-bar span:hover {
+    color: #8cc1c1;
+    cursor: pointer;
+}
