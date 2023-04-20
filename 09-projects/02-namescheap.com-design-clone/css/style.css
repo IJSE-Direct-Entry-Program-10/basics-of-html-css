@@ -30,6 +30,7 @@
 #menu-bar-left-container > span,
 #menu-bar-right-container > span {
     padding: 0 8px;
+    display: inline-block;
 }
 
 .drop-down::after {
@@ -51,4 +52,87 @@
 #menu-bar-right-container span.icon {
     font-size: 19px;
     font-weight: bold;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down:hover > .menu-container{
+    display: block;
+}
+
+.menu-container {
+    color: white;
+    position: absolute;
+    display: none;
+}
+
+.menu-container.align-right {
+    right: 0;
+}
+
+.menu-container > .invisible-header {
+    background-color: rgba(0, 255, 255, 0);
+    position: relative;
+    height: 20px;
+}
+
+.menu {
+    min-width: 165px;
+}
+
+.menu > li {
+    padding: 16px;
+    cursor: pointer;
+    background-color: #6d6e70;
+    border-top: 1px solid gray;
+    font-weight: 700;
+    color: white;
+}
+
+.menu > li:hover {
+    background-color: #8cc1c1;
+    border-top-color: #8cc1c1;
+}
+
+.menu > li:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+}
+
+.menu > li:first-child::after {
+    content: "";
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #6d6e70;
+    position: absolute;
+    top: -16px;
+    left: 20px;
+}
+
+.menu-container.align-right .menu > li:first-child::after {
+    content: "";
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #6d6e70;
+    position: absolute;
+    top: -16px;
+    left: 65%;
+}
+
+.menu > li:first-child:hover::after {
+    border-bottom-color: #8cc1c1;
+}
+
+.menu-container.align-right .menu > li:first-child:hover::after {
+    border-bottom-color: #8cc1c1;
+}
+
+.menu > li:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
