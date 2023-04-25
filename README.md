@@ -12,6 +12,7 @@ A collection of projects to explore the basics of HTML and CSS
 - [Typography and Iconography](/06-typography-and-iconography/)
 - [CSS Specificity Algorithm](/07-css-specificity-algorithm/)
 - [Layouts](/08-layouts/)
+- [Projects](/09-projects/)
 
 ### License
 Copyright 2023 DEP. All Rights Reserved.
